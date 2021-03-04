@@ -52,4 +52,29 @@
   text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
   border-radius: 5px;
   box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+}
+
+
+.delete-btn {
+  position: absolute;
+  top: 5px;
+  right: 5px;
+}
+
+.add-tag-btn {
+
+}
+
+.tags-list {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+
+  span {
+    font-size: 12px;
+    background-color: #09f;
+    padding: 4px;
+    border-radius: 4px;
+  }
 }
