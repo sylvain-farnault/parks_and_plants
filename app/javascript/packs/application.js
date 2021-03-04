@@ -9,6 +9,9 @@ require("@rails/activestorage").start()
 require("channels")
 
 import 'bootstrap';
+import 'select2/dist/css/select2.css';
+
+import { multipleSelect } from '../components/select'
 
 
 // Uncomment to copy all static images under ../images to the output folder and reference
@@ -17,3 +20,10 @@ import 'bootstrap';
 //
 // const images = require.context('../images', true)
 // const imagePath = (name) => images(name, true)
+
+
+
+document.addEventListener('turbolinks:load', () => {
+  // Call your JS functions here
+  multipleSelect();
+});
